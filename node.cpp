@@ -9,3 +9,11 @@ void Node::propose() {
 void Node::accept() {
     // TODO
 }
+
+string Node::get_id() const {
+    return this->id;
+}
+
+int Node::get_status() const {
+    return this->status;
+}

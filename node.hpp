@@ -17,6 +17,9 @@ class Node {
 
         void propose();
         void accept();
+
+        string get_id() const;
+        int get_status() const;
 };
 
 #endif
