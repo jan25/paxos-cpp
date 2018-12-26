@@ -1,6 +1,12 @@
+#ifndef MESSAGE_H
+#define MESSAGE_H
+
+enum MessageType {Proposal, Accept};
+
 class Message
 {
 public:
+	MessageType type;
 	Message();
 	~Message();
 };
@@ -35,3 +41,5 @@ public:
 	AcceptedMessage(int Id, int Value);
 	~AcceptedMessage();
 };
+
+#endif

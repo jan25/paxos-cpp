@@ -2,6 +2,7 @@
 #define NODE_H
 
 #include <string>
+#include <utility>
 
 using namespace std;
 
@@ -15,8 +16,10 @@ class Node {
     public:
         Node(string, int, const Cluster&);
 
-        void propose();
-        void accept();
+        int generate_proposal_id();
+
+        int propose(int);
+        Message& accept(const Message& message);
 
         string get_id() const;
         int get_status() const;
