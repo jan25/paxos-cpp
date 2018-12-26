@@ -1,7 +1,7 @@
 CC = g++
 
 main: main.o node.o cluster.o learner.o
-	$(CC) -o main.o node.o cluster.o learner.o
+	$(CC) -o main main.o node.o cluster.o learner.o
 
 main.o:	main.cpp
 	$(CC) -c main.cpp
@@ -16,4 +16,4 @@ learner.o:	learner.cpp
 	$(CC) -c learner.cpp
 
 clean:
-	rm -f core *.o
+	rm -f core *.o main *.out
