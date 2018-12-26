@@ -2,7 +2,6 @@
 #define CLUSTER_H
 
 #include "node.hpp"
-
 #include <vector>
 
 class Cluster {

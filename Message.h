@@ -11,7 +11,6 @@ public:
 	int id;
 	ProposeMessage(int Id);
 	~ProposeMessage();
-	void test();
 };
 
 class AcceptMessage: public Message{
