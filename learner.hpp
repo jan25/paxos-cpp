@@ -13,8 +13,11 @@ class Learner {
     
     public:
         Learner();
+
         // TODO use templates for pair key, value
         bool remember(pair<string, string>&);
+
+        string try_get_value(string& key);
 };
 
 #endif

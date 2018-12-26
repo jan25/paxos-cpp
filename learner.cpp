@@ -7,3 +7,10 @@ bool Learner::remember(pair<string, string>& key_value) {
     return true;
 }
 
+string Learner::try_get_value(string& key) {
+    if (this->db.find(key) != this->db.end()) {
+        return this->db[key];
+    }
+    return NULL;
+}
+
