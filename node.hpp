@@ -11,7 +11,7 @@ class Node {
     private:
         string id;
         int status; // 1 is up, 0 is down
-        Cluster& cluster;
+        const Cluster& cluster;
     public:
         Node(string, int, const Cluster&);
 

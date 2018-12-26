@@ -1,10 +1,6 @@
 #include "node.hpp"
 
-Node::Node(string id, int status, const Cluster& c) {
-    this->id = id;
-    this->status = status;
-    this->cluster = c;
-}
+Node::Node(string id, int status, const Cluster& c) : id(id), status(status), cluster(c) { }
 
 void Node::propose() {
     // TODO
