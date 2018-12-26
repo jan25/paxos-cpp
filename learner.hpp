@@ -15,9 +15,9 @@ class Learner {
         Learner();
 
         // TODO use templates for pair key, value
-        bool remember(pair<string, string>&);
+        bool remember(const pair<string, string>&);
 
-        string try_get_value(string& key);
+        string try_get_value(const string& key);
 };
 
 #endif
