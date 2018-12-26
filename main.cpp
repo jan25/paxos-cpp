@@ -1,4 +1,6 @@
 #include "learner.hpp"
+#include "cluster.hpp"
+#include "node.hpp"
 
 #include <iostream>
 #include <string>
